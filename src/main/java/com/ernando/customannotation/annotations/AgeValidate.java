@@ -9,9 +9,9 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = NameValidateImpl.class)
-public @interface NameValidate {
-    String message() default "Name is inválid";
+@Constraint(validatedBy = AgeValidateImpl.class)
+public @interface AgeValidate {
+    String message() default "Age is inválid";
 
     Class<?>[] groups() default {};
 

@@ -1,11 +1,14 @@
 package com.ernando.customannotation.requests;
 
+import com.ernando.customannotation.annotations.AgeValidate;
 import com.ernando.customannotation.annotations.NameValidate;
 
 public class TestRequest {
 
     @NameValidate
     private String name;
+
+    @AgeValidate
     private Integer age;
 
     public String getName() {
